@@ -30,8 +30,8 @@
 			<div class="hero-content">
 				<p class="hero-eyebrow"><span class="eyebrow-dot" aria-hidden="true">&#9679;</span> Software Quality &amp; Test Automation</p>
 				<h1 class="hero-title" id="hero-title">
-					<span>From Software</span>
-					<span><em class="text-risk">Risk</em> to <em class="text-greenflag">GreenFlag.</em></span>
+					<span class="hero-title-line">From Software</span>
+					<span class="hero-title-line"><em class="text-risk">Risk</em> to <em class="text-greenflag">GreenFlag.</em></span>
 				</h1>
 				<p class="hero-description">We help businesses identify software risks, strengthen test coverage, automate repetitive validation, and release with confidence.</p>
 				<div class="hero-actions">
@@ -51,28 +51,35 @@
 			</div>
 		</section>
 		<section class="philosophy" aria-labelledby="philosophy-title">
-			<div class="section-introduction">
+			<div class="philosophy-introduction">
+				<p class="philosophy-eyebrow">Our Quality Philosophy</p>
 				<h2 id="philosophy-title">The GreenFlag Philosophy</h2>
 				<p>Every software product carries risks. Our job is to find them before your customers do.</p>
 			</div>
-			<div class="philosophy-items">
-				<article class="philosophy-item philosophy-item-red">
-					<p class="philosophy-label"><span aria-hidden="true">🔴</span> Red Flag</p>
-					<h3>Critical Risk</h3>
-					<p>Critical defects or unacceptable risks that need to be addressed before release.</p>
+			<div class="release-pipeline" aria-label="Software release quality journey">
+				<div class="pipeline-track" aria-hidden="true"><span class="pipeline-chevron pipeline-chevron-one"></span><span class="pipeline-chevron pipeline-chevron-two"></span><span class="pipeline-chevron pipeline-chevron-three"></span><span class="pipeline-chevron pipeline-chevron-four"></span></div>
+				<article class="pipeline-entry">
+					<div class="software-window" aria-hidden="true"><span></span><span></span><span></span><b></b><i></i><i></i></div>
+					<strong>Your<br>Software</strong>
+					<p>New features,<br>changes, or releases</p>
 				</article>
-				<article class="philosophy-item philosophy-item-yellow">
-					<p class="philosophy-label"><span aria-hidden="true">🟡</span> Yellow Flag</p>
-					<h3>Risk Identified</h3>
-					<p>Known issues or areas requiring attention, assessment, or an informed release decision.</p>
+				<article class="quality-gate quality-gate-red">
+					<span class="gate-number">01</span><div class="gate-circle" aria-hidden="true">!</div>
+					<div class="gate-copy"><p class="philosophy-label">Red Flag</p><h3>Critical Risk</h3><p>Critical defects or unacceptable risks that need to be addressed before release.</p></div>
 				</article>
-				<article class="philosophy-item philosophy-item-green">
-					<p class="philosophy-label"><span aria-hidden="true">🟢</span> Green Flag</p>
-					<h3>Release Confidence</h3>
-					<p>The tested scope meets the agreed quality criteria, with no unresolved critical risks identified within that scope.</p>
+				<article class="quality-gate quality-gate-yellow">
+					<span class="gate-number">02</span><div class="gate-circle" aria-hidden="true">!</div>
+					<div class="gate-copy"><p class="philosophy-label">Yellow Flag</p><h3>Risk Identified</h3><p>Known issues or areas requiring attention, assessment, or an informed release decision.</p></div>
+				</article>
+				<article class="quality-gate quality-gate-green">
+					<span class="gate-number">03</span><div class="gate-circle" aria-hidden="true">&#10003;</div>
+					<div class="gate-copy"><p class="philosophy-label">Green Flag</p><h3>Release Confidence</h3><p>The tested scope meets the agreed quality criteria, with no unresolved critical risks identified within that scope.</p></div>
+				</article>
+				<article class="pipeline-output">
+					<span class="output-mark" aria-hidden="true">&#10003;</span><strong>GreenFlag</strong><p>Ready to release<br>with confidence</p>
 				</article>
 			</div>
-			<p class="philosophy-conclusion">Our goal: From Software Risk to GreenFlag.</p>
+			<p class="philosophy-conclusion"><span>From Software Risk</span><b aria-hidden="true">&#8594;</b><span>to <strong>GreenFlag</strong></span></p>
 		</section>
 
 		<section class="services" id="services" aria-labelledby="services-title">
