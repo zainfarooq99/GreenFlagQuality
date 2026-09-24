@@ -86,7 +86,7 @@ ul, ol { margin: 0; padding: 0; }
 .philosophy::before { position: absolute; top: 18%; right: -8%; width: 44%; height: 55%; background-image: radial-gradient(rgba(22,130,77,.12) .7px, transparent .7px); background-size: 24px 24px; opacity: .22; content: ""; pointer-events: none; }
 .philosophy-introduction { position: relative; z-index: 1; max-width: 650px; margin: 0 auto 65px; text-align: center; }
 .philosophy-eyebrow { margin-bottom: .85rem; color: var(--color-green-dark); font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-.philosophy-introduction h2 { margin-bottom: 1rem; font-size: clamp(2.7rem,3.8vw,3.8rem); font-weight: 800; line-height: 1.05; letter-spacing: -.045em; }
+.philosophy-introduction h2 { max-width: none; margin-bottom: 1rem; font-size: clamp(2.5rem,3.2vw,3.35rem); font-weight: 800; line-height: 1.05; letter-spacing: -.04em; white-space: nowrap; }
 .philosophy-introduction > p:last-child { margin: 0; font-size: 18px; line-height: 1.7; }
 .release-pipeline { position: relative; z-index: 1; display: grid; grid-template-columns: 1.05fr 1fr 1fr 1fr 1.05fr; align-items: start; gap: clamp(1rem,2vw,2rem); max-width: 1240px; margin-inline: auto; }
 .pipeline-track { position: absolute; top: 5.4rem; right: 9%; left: 9%; height: 4px; background: linear-gradient(90deg, #d9b0ad 0%, #d6524c 23%, #d6a52b 52%, var(--color-green) 82%, #52b879 100%); box-shadow: 0 0 0 1px rgba(22,130,77,.04); }
@@ -183,6 +183,9 @@ ul, ol { margin: 0; padding: 0; }
 	.hero-dashboard { width: 110%; max-width: none; margin-left: -5%; }
 	.philosophy-introduction h2 { font-size: clamp(2.3rem, 10vw, 3rem); }
 	.philosophy-conclusion { border-radius: 18px; font-size: 1rem; }
+}
+@media (max-width: 700px) {
+	.philosophy-introduction h2 { white-space: normal; }
 }
 @media (max-width: 420px) {
 	.site-navigation { align-items: stretch; flex-wrap: wrap; gap: .65rem; padding-block: 1rem; }
