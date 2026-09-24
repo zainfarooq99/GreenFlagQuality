@@ -6,18 +6,19 @@
 	<meta name="description" content="GreenFlag Quality provides software quality engineering and test automation services.">
 	
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
     <title>GreenFlag Quality | Software Quality &amp; Test Automation</title>
 </head>
 <body>
 	<header class="site-header">
-		<nav class="site-navigation" aria-label="Primary navigation">
+		<nav class="site-navigation container" aria-label="Primary navigation">
 			<a class="brand" href="#top">
 				<img src="assets/greenflag-logo.png" alt="GreenFlag Quality">
 			</a>
 			<ul class="navigation-list">
 				<li><a href="#services">Services</a></li>
-				<li><a href="#our-work">Our Work</a></li>
+				<li><a href="#how-we-work">How We Work</a></li>
 				<li><a href="#about">About</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
@@ -27,6 +28,7 @@
 
 	<main id="top">
 		<section class="hero" aria-labelledby="hero-title">
+			<div class="container hero-inner">
 			<div class="hero-content">
 				<p class="hero-eyebrow"><span class="eyebrow-dot" aria-hidden="true">&#9679;</span> Software Quality &amp; Test Automation</p>
 				<h1 class="hero-title" id="hero-title">
@@ -36,7 +38,7 @@
 				<p class="hero-description">We help businesses identify software risks, strengthen test coverage, automate repetitive validation, and release with confidence.</p>
 				<div class="hero-actions">
 					<a class="button button-primary" href="#contact">Let's Talk <span aria-hidden="true">&#8594;</span></a>
-					<a class="button button-secondary" href="#our-work">View Our Work</a>
+					<a class="button button-secondary" href="#how-we-work">How We Work</a>
 				</div>
 				<div class="hero-benefits" aria-label="Quality engineering benefits">
 					<div class="hero-benefit"><span class="benefit-icon" aria-hidden="true">&#10003;</span><span>Fewer Bugs</span></div>
@@ -49,12 +51,14 @@
 			<div class="hero-dashboard-wrap">
 				<img class="hero-dashboard" src="assets/qa-command-center.png" alt="GreenFlag Quality QA Command Center showing release readiness and software quality metrics">
 			</div>
+			</div>
 		</section>
-		<section class="philosophy" aria-labelledby="philosophy-title">
-			<div class="philosophy-introduction">
-				<p class="philosophy-eyebrow">Our Quality Philosophy</p>
-				<h2 id="philosophy-title">The GreenFlag Philosophy</h2>
-				<p>Every software product carries risks. Our job is to find them before your customers do.</p>
+		<section class="philosophy section-atmosphere section-spacing" aria-labelledby="philosophy-title">
+			<div class="container">
+			<div class="section-header philosophy-introduction">
+				<p class="section-eyebrow">Our Philosophy</p>
+				<h2 class="section-heading" id="philosophy-title">The GreenFlag Philosophy</h2>
+				<p class="section-summary">Every software product carries risks. Our job is to find them before your customers do.</p>
 			</div>
 			<div class="release-pipeline" aria-label="Software release quality journey">
 				<div class="pipeline-track" aria-hidden="true"><span class="pipeline-chevron pipeline-chevron-one"></span><span class="pipeline-chevron pipeline-chevron-two"></span><span class="pipeline-chevron pipeline-chevron-three"></span><span class="pipeline-chevron pipeline-chevron-four"></span></div>
@@ -80,14 +84,15 @@
 				</article>
 			</div>
 			<p class="philosophy-conclusion"><span>From Software Risk</span><b aria-hidden="true">&#8594;</b><span>to <strong>GreenFlag</strong></span></p>
+			</div>
 		</section>
 
-		<section class="services" id="services" aria-labelledby="services-title">
-			<div class="services-inner">
-			<div class="services-introduction">
-				<p class="services-eyebrow">What We Test</p>
-				<h2 id="services-title">Quality engineering across your<br>entire software lifecycle.</h2>
-				<p>From hands-on product testing to automation and release strategy, GreenFlag helps teams ship with confidence.</p>
+		<section class="services section-atmosphere section-spacing" id="services" aria-labelledby="services-title">
+			<div class="container">
+			<div class="section-header services-introduction">
+				<p class="section-eyebrow">What We Test</p>
+				<h2 class="section-heading" id="services-title">Quality engineering across your<br>entire software lifecycle.</h2>
+				<p class="section-summary">From hands-on product testing to automation and release strategy, GreenFlag helps teams ship with confidence.</p>
 			</div>
 			<div class="services-grid">
 				<article class="service-card"><div class="service-card-top"><div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/><path d="M4 4h16v16H4z"/></svg></div><div class="service-micro checklist-micro" aria-hidden="true"><i></i><span>&#10003; Login flow</span><span>&#10003; Regression</span><span>&#10003; Checkout / E2E</span><b>&#10003;</b></div></div><h3>Manual &amp; Functional Testing</h3><p>Exploratory, functional, regression, usability and end-to-end testing to ensure your product works as expected.</p><div class="service-tags"><span>Functional</span><span>Regression</span><span>Exploratory</span><span>E2E</span></div></article>
@@ -101,82 +106,146 @@
 			</div>
 		</section>
 
-		<section class="approach" aria-labelledby="approach-title">
-			<div class="section-introduction">
-				<h2 id="approach-title">How We Work</h2>
+		<section class="approach section-atmosphere section-spacing" id="how-we-work" aria-labelledby="approach-title">
+			<div class="container">
+			<div class="section-header approach-introduction">
+				<p class="section-eyebrow">How We Work</p>
+				<h2 class="section-heading" id="approach-title">Quality without the guesswork.</h2>
+				<p class="section-summary">A practical quality process that turns uncertainty into clear, confident release decisions.</p>
 			</div>
-			<ol class="approach-steps">
-				<li class="approach-step">
-					<h3>Understand</h3>
-					<p>We learn your product, users, goals, architecture, delivery process, and highest-impact risks.</p>
-				</li>
-				<li class="approach-step">
-					<h3>Plan</h3>
-					<p>We define a focused quality approach with clear priorities, scope, responsibilities, and success criteria.</p>
-				</li>
-				<li class="approach-step">
-					<h3>Test &amp; Automate</h3>
-					<p>We explore, validate, and automate the checks that provide your team with the most valuable feedback.</p>
-				</li>
-				<li class="approach-step">
-					<h3>Report &amp; Improve</h3>
-					<p>We communicate actionable findings, clarify release risks, and help continuously improve the quality process.</p>
-				</li>
-			</ol>
+			<div class="approach-journey">
+				<ol class="approach-steps" role="list">
+					<li class="approach-step">
+						<span class="approach-number" aria-hidden="true">01</span>
+						<span class="approach-marker" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 5 5M8 10.5h5M10.5 8v5"/></svg></span>
+						<h3>Understand</h3>
+						<p>Understand the product, users, requirements and areas of greatest risk.</p>
+						<span class="approach-status">Discover</span>
+					</li>
+					<li class="approach-step">
+						<span class="approach-number" aria-hidden="true">02</span>
+						<span class="approach-marker" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2h6v2M8 10l1 1 2-2M13 10h3M8 16l1 1 2-2M13 16h3"/></svg></span>
+						<h3>Plan</h3>
+						<p>Define testing scope, priorities, coverage and the right quality approach.</p>
+						<span class="approach-status">Design</span>
+					</li>
+					<li class="approach-step">
+						<span class="approach-number" aria-hidden="true">03</span>
+						<span class="approach-marker" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m7 5-4 4 4 4M17 5l4 4-4 4M14 3l-4 12M10 19l3 3 7-7"/></svg></span>
+						<h3>Test &amp; Automate</h3>
+						<p>Execute focused testing and introduce automation where it provides real value.</p>
+						<span class="approach-status">Validate</span>
+					</li>
+					<li class="approach-step">
+						<span class="approach-number" aria-hidden="true">04</span>
+						<span class="approach-marker" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4v16h16M8 16v-3M12 16v-5M16 16V9M7 9l5-4 4 2 4-4M16 3h4v4"/></svg></span>
+						<h3>Report &amp; Improve</h3>
+						<p>Communicate findings clearly, support release decisions and continuously improve quality.</p>
+						<span class="approach-status">Improve</span>
+					</li>
+				</ol>
+				<div class="approach-destination">
+					<span class="approach-finish" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 21V3M5 4c5-4 9 4 14 0v10c-5 4-9-4-14 0"/><path d="m9 9 2 2 4-4"/></svg></span>
+					<div><strong>GreenFlag</strong><span>Release Confidence</span></div>
+				</div>
+			</div>
+			<p class="approach-note">Every engagement is adapted to your product, risk profile and delivery model.</p>
+			</div>
 		</section>
 
-		<section class="our-work" id="our-work" aria-labelledby="our-work-title">
-			<div class="section-introduction">
-				<h2 id="our-work-title">Our Work</h2>
-				<p>Our work demonstrates how we approach software quality challenges—from building maintainable automation frameworks to validating APIs, critical user journeys, and release readiness.</p>
-			</div>
-			<div class="portfolio-placeholder" aria-label="Placeholder for portfolio and case study cards">
-				<article class="portfolio-placeholder-item">
-					<h3>Playwright Test Automation Framework</h3>
-					<p>A portfolio demonstration of a maintainable Playwright and TypeScript automation framework with Page Object Model, reusable components, reliable locators, reporting, and automated regression coverage.</p>
-				</article>
-				<article class="portfolio-placeholder-item">
-					<h3>Selenium / C# Automation</h3>
-					<p>Professional experience demonstrating reusable test architecture, page objects, regression automation, and maintainable test design.</p>
-				</article>
-				<article class="portfolio-placeholder-item">
-					<h3>API Testing &amp; Quality Engineering</h3>
-					<p>A practical demonstration of API validation, workflow testing, negative scenarios, data verification, and quality-focused test design.</p>
-				</article>
-			</div>
-		</section>
-
-		<section class="about" id="about" aria-labelledby="about-title">
-			<div class="section-introduction">
-				<h2 id="about-title">Quality Engineering Backed by Experience</h2>
+		<section class="about section-atmosphere section-spacing" id="about" aria-labelledby="about-title">
+			<div class="container">
+			<div class="section-header about-introduction">
+				<p class="section-eyebrow">About GreenFlag</p>
+				<h2 class="section-heading" id="about-title">Experience behind every GreenFlag.</h2>
+				<p class="section-summary">GreenFlag Quality is a focused quality engineering company helping software teams understand risk, strengthen quality and release with confidence.</p>
 			</div>
 			<div class="about-content">
-				<div class="about-portrait" role="img" aria-label="Placeholder for a portrait of Zain Farooq"></div>
-				<div class="about-details">
-					<h3>ZAIN FAROOQ</h3>
-					<p class="about-role">Founder &amp; QA Automation Specialist</p>
-					<p>GreenFlag Quality is founded by ZAIN FAROOQ, a QA professional with 13+ years of experience across manual testing, test automation, API testing, performance testing, security testing, QA strategy, release management, and team leadership.</p>
-					<p>GreenFlag Quality is currently founder-led, with Zain directly leading QA engagements and working with clients to identify risks, improve coverage, and support confident releases.</p>
+				<div class="about-company">
+					<h3 class="about-label">Quality, built around real software delivery.</h3>
+					<p class="about-company-lead">We combine hands-on testing, automation and technical validation with practical QA strategy.</p>
+					<p>Our approach is designed to give teams a clear view of quality, risk and release readiness before software reaches their customers.</p>
+				</div>
+				<div class="about-founder">
+					<p class="about-label">Founder &amp; QA Lead</p>
+					<h3>Zain Farooq</h3>
+					<p class="about-experience"><span class="about-experience-number">15+</span><span class="about-experience-label">Years of professional<br>experience</span></p>
+					<p class="about-founder-summary">Across software quality, testing, automation, QA leadership and release management.</p>
+				</div>
+			</div>
+			</div>
+		</section>
+
+		<section class="contact section-atmosphere section-spacing" id="contact" aria-labelledby="contact-title">
+			<div class="container">
+				<div class="section-header contact-introduction">
+					<p class="section-eyebrow">Let's Talk</p>
+					<h2 class="section-heading" id="contact-title">Ready to turn software risk into GreenFlag?</h2>
+					<p class="section-summary">Whether you need focused testing, automation, release confidence or help strengthening your QA process, tell us what you're working on.</p>
+				</div>
+				<div class="contact-layout">
+					<div class="contact-context">
+						<p class="contact-label">Let's Talk Quality</p>
+						<h3>Have a project, release or quality challenge in mind?</h3>
+						<p>Tell us what you're working on and we'll start by understanding the problem, the risks and where GreenFlag can help.</p>
+						<a class="contact-link" href="https://www.linkedin.com/in/zain-farooq-3b886775" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">&#8594;</span></a>
+					</div>
+					<form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+						<input type="hidden" name="access_key" value="f54beac4-893f-4d76-9620-65150c9f097c">
+						<input type="hidden" name="subject" value="New GreenFlag Quality Inquiry">
+						<input type="hidden" name="from_name" value="GreenFlag Quality Website">
+						<input type="checkbox" name="botcheck" class="contact-honeypot" tabindex="-1" aria-hidden="true" autocomplete="off">
+						<div class="contact-fields">
+							<div class="contact-field">
+								<label for="contact-name">Name <span aria-hidden="true">*</span></label>
+								<input id="contact-name" type="text" name="name" required autocomplete="name">
+							</div>
+							<div class="contact-field">
+								<label for="contact-email">Work Email <span aria-hidden="true">*</span></label>
+								<input id="contact-email" type="email" name="email" required autocomplete="email">
+							</div>
+							<div class="contact-field">
+								<label for="contact-company">Company</label>
+								<input id="contact-company" type="text" name="company" autocomplete="organization">
+							</div>
+							<div class="contact-field">
+								<label for="contact-service">What can we help with? <span aria-hidden="true">*</span></label>
+								<select id="contact-service" name="service" required>
+									<option value="" disabled selected>Select a service</option>
+									<option>Manual &amp; Functional Testing</option>
+									<option>Test Automation</option>
+									<option>API Testing</option>
+									<option>Performance Testing</option>
+									<option>Security Testing</option>
+									<option>QA Strategy &amp; Consulting</option>
+									<option>AI-Assisted Quality Engineering</option>
+									<option>Other</option>
+								</select>
+							</div>
+							<div class="contact-field contact-field-message">
+								<label for="contact-message">Tell us about your project <span aria-hidden="true">*</span></label>
+								<textarea id="contact-message" name="message" required placeholder="Briefly describe your product, testing needs or quality challenge."></textarea>
+							</div>
+						</div>
+						<button class="button button-primary" type="submit">Start a Conversation <span aria-hidden="true">&#8594;</span></button>
+						<p class="contact-status" id="contact-status" role="status" aria-live="polite" aria-atomic="true"></p>
+						<a class="contact-link" id="contact-status-link" href="https://www.linkedin.com/in/zain-farooq-3b886775" target="_blank" rel="noopener noreferrer" hidden>Connect on LinkedIn <span aria-hidden="true">&#8594;</span></a>
+					</form>
 				</div>
 			</div>
 		</section>
-
-		<section class="final-cta" id="contact" aria-labelledby="contact-title">
-			<h2 id="contact-title">Ready to Turn Software Risk into GreenFlag?</h2>
-			<p>Let's identify the risks, improve quality, and give your team confidence to release.</p>
-			<a class="button button-primary" href="#contact" aria-label="Let's Talk, contact details coming soon">Let's Talk</a>
-		</section>
 	</main>
 
-	<footer class="site-footer">
+	<footer class="site-footer container">
 		<div class="footer-brand">
 			<p class="brand">GreenFlag Quality</p>
 			<p>Software Quality &amp; Test Automation</p>
+			<a class="footer-linkedin" href="https://www.linkedin.com/in/zain-farooq-3b886775" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">&#8599;</span></a>
 		</div>
 		<nav class="footer-navigation" aria-label="Footer navigation">
 			<ul class="navigation-list">
 				<li><a href="#services">Services</a></li>
-				<li><a href="#our-work">Our Work</a></li>
+				<li><a href="#how-we-work">How We Work</a></li>
 				<li><a href="#about">About</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
